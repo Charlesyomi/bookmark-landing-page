@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style/style.css">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+<!-- navbar -->
+
+<nav class="relative container mx-auto p-6" >
+
+  <!--flex container  -->
+
+  <div class="flex  items-center justify-between">
+    <!-- logo section -->
+    <div class="pt-2">
+      <img src="./images/logo-bookmark.svg" alt="">
+    </div>
+
+    <!-- menu items -->
+    <div class="hidden sm:flex space-x-6 capitalize">
+      <a href="#features-section" class="hover:text-SoftRed">features</a>
+      <a href="#pricing-section" class="hover:text-SoftRed">pricing</a>
+      <a href="#contact-form" class="hover:text-SoftRed">contact</a>
+    </div>
+
+    <!-- login button -->
+    <div class="pt-2">
+      <a class="hidden md:inline-block rounded-lg px-6 py-2 uppercase font-semibold bg-SoftRed text-white baseline cursor-pointer hover:bg-transparent hover:text-SoftRed hover:border-2 hover:border-SoftRed hover:duration-300">login</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- hero section -->
+
+<section id="hero" class="container mx-auto">
+  <div class="container flex flex-col-reverse space-y-11 space-y-reverse  p-5 items-center text-center  md:flex-row md:justify-evenly md:space-y-0 md:space-x-11  md:text-left">
+
+  <div class="flex flex-col space-y-4 max-w-sm md:w-1/2 justify-between" >
+    <h1 class="capitalize font-bold text-3xl text-VeryDarkBlue ">A simple bookmark manager</h1>
+    <p class="intro-text text-SoftBlue">A clean and simple interface to organize your favourite websites. Open a new browser tab and see you sites load instantly</p>
+
+    <div class="download-buttons flex space-x-2">
+      <button class="px-6 py-2 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300" >Get it on Chrome</button>
+      <button class="px-6 py-2 text-VeryDarkBlue baseline rounded-lg font-semibold z-50 shadow-xl hover:border-2 hover:border-VeryDarkBlue hover:duration-300">Get it on firefox</button>
+    </div>
+    
+  </div>
+
+  <div class="max-w-sm md:w-1/2 z-50">
+    <img src="./images/illustration-hero.svg" alt="">
+  </div>
+</section>
+
+
+<section id="features-section" class="container my-14 mx-auto p-5">
+  <header class="text-center max-w-md mx-auto">
+    <h2 class="text-3xl capitalize text-VeryDarkBlue font-bold">features</h2>
+    <p class="text-SoftBlue">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go</p>
+  </header>
+
+  <dl>
+    <div class="container feat-container">
+      <dt>
+        <button type="button" aria-expanded="false" aria-controls="feat1-desc" class="font-medium capitalize text-xl">simple bookmarking</button>
+      </dt>
+      <dd>
+        <div id="feat1-desc" class="space-y-7 space-x-5 mt-14 flex flex-col items-center justify-evenly  md:flex-row">
+          <div class="max-w-sm">
+            <img src="./images/illustration-features-tab-1.svg" alt="">
+          </div>
+          <div class="desc-text container text-center space-y-7 max-w-sm md:text-left">
+            <h3 class="text-3xl text-VeryDarkBlue font-bold">Bookmark in one click</h3>
+            <p class="text-SoftBlue">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button class="px-6 py-4 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300 capitalize hidden md:block" >more info</button>
+          </div>
+        </div>
+      </dd>
+    </div>
+
+    <div class="container feat-container">
+      <dt>
+        <button type="button" aria-expanded="false" aria-controls="feat1-desc" class="font-medium capitalize text-xl">speedy searching</button>
+      </dt>
+      <dd>
+        <div id="feat1-desc" class="space-y-7 space-x-5 mt-14 flex flex-col items-center justify-evenly  md:flex-row">
+          <div class="max-w-sm">
+            <img src="./images/illustration-features-tab-2.svg" alt="">
+          </div>
+          <div class="desc-text container text-center space-y-7 max-w-sm md:text-left">
+            <h3 class="text-3xl text-VeryDarkBlue font-bold">Intelligent search</h3>
+            <p class="text-SoftBlue">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+            <button class="px-6 py-4 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300 capitalize hidden md:block" >more info</button>
+          </div>
+        </div>
+      </dd>
+    </div>
+
+    <div class="container feat-container">
+      <dt>
+        <button type="button" aria-expanded="false" aria-controls="feat1-desc" class="font-medium capitalize text-xl">Easy Sharing</button>
+      </dt>
+      <dd>
+        <div id="feat1-desc" class="space-y-7 space-x-5 mt-14 flex flex-col items-center justify-evenly  md:flex-row">
+          <div class="max-w-sm">
+            <img src="./images/illustration-features-tab-3.svg" alt="">
+          </div>
+          <div class="desc-text container text-center space-y-7 max-w-sm md:text-left">
+            <h3 class="text-3xl text-VeryDarkBlue font-bold">Share your bookmarks</h3>
+            <p class="text-SoftBlue">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+            <button class="px-6 py-4 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300 capitalize hidden md:block" >more info</button>
+          </div>
+        </div>
+      </dd>
+    </div>
+
+  </dl>
+</section>
+
+
+
+<!-- download sections -->
+<section id="pricing-section" class = "text-center container p-5 flex flex-col mb-7 mx-auto">
+  <h2 class="text-3xl text-VeryDarkBlue font-bold">Download the extension</h2>
+  <p class="text-SoftBlue max-w-md mx-auto mt-5">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+
+  <!-- the extension for the different browsers goes here -->
+  <div class="container flex flex-col my-10 md:flex-row">
+    <div class="container  flex flex-col p-10 pt-10 shadow-xl rounded-lg">
+      <img src="./images/logo-chrome.svg" alt="" class="mx-auto my-5">
+      <h4 class="text-2xl text-VeryDarkBlue font-bold my-5">Add to Chrome</h4>
+      <p class="text-SoftBlue my-5">Minimum version 62</p>
+      <button class="py-2 mt-5 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300 capitalize" >add &#38; install extension</button>
+    </div>
+
+    <div class="container  flex flex-col p-10 pt-10 shadow-xl rounded-lg md:relative md:top-8">
+      <img src="./images/logo-firefox.svg" alt="" class="mx-auto my-5">
+      <h4 class="text-2xl text-VeryDarkBlue font-bold my-5">Add to Firefox</h4>
+      <p class="text-SoftBlue my-5">Minimum version 62</p>
+      <button class="py-2 mt-5 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300 capitalize md:mt-auto" >add &#38; install extension</button>
+    </div>
+
+    <div class="container  flex flex-col p-10 pt-10 shadow-xl rounded-lg md:relative md:top-16">
+      <img src="./images/logo-opera.svg" alt="" class="mx-auto my-5">
+      <h4 class="text-2xl text-VeryDarkBlue font-bold my-5">Add to Opera</h4>
+      <p class="text-SoftBlue my-5">Minimum version 62</p>
+      <button class="py-2 mt-5 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300 capitalize md:mt-auto">add &#38; install extension</button>
+    </div>
+
+  </div>
+  
+</section>
+
+
+<section class="my-7 space-y-7 text-center container p-5 mx-auto max-w-md">
+  <h2 class="text-3xl text-VeryDarkBlue font-bold capitalize">
+    frequently asked questions
+  </h2>
+
+  <p class="text-SoftBlue">Here are some of our <abbr title="Frequently Asked Questions">FAQ</abbr>s. If you have any other questions you’d like answered please feel free to email us.</p>
+
+  <dl id='faq-list' class="container space-y-5 text-left">
+    <div class="d-container border-solid border-b-2 py-5">
+      <dt class="text-VeryDarkBlue text-xl">
+        <button type='button' aria-expanded="false" aria-controls="faq1-desc" class="font-medium">
+          What is Bookmark?
+        </button>
+      </dt>
+      <dd>
+        <div id="faq1-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+        </div>
+      </dd>
+    </div>
+    <div class="d-container border-solid border-b-2 py-5">
+      <dt class="text-VeryDarkBlue text-xl">
+        <button type="button" aria-expanded="false" aria-controls="faq2-desc" class="font-medium">How can I request a new browser?</button>
+      </dt>
+      <dd>
+        <div id="faq2-desc">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+        </div>
+      </dd>
+    </div>
+
+    <div class="d-container border-solid border-b-2 py-5">
+      <dt class="text-VeryDarkBlue text-xl">
+        <button type="button" aria-expanded="false" aria-controls="faq3-desc" class="font-medium">
+          Is there a mobile app?
+        </button>
+      </dt>
+      <dd>
+        <div id="faq3-desc">
+          Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+          sollicitudin ex et ultricies bibendum
+        </div>
+      </dd>
+    </div>
+
+    <div class="d-container border-solid border-b-2 py-5">
+      <dt class="text-VeryDarkBlue text-xl">
+        <button type="button" aria-expanded="false" aria-controls="faq4-desc" class="font-medium">What about other Chromium browsers?</button>
+      </dt>
+      <dd>
+        <div id="faq4-desc">
+          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+          vitae neque eget nisl gravida pellentesque non ut velit.
+        </div>
+      </dd>
+    </div>
+    
+  </dl>
+
+  <button class="px-6 py-4 text-white baseline bg-SoftBlue rounded-lg font-semibold hover:bg-transparent hover:text-SoftBlue hover:border-2 hover:border-SoftBlue hover:font-semibold hover:duration-300 capitalize" >more info</button>
+
+</section>
+
+
+<section class="px-5 py-14 mt-7 bg-SoftBlue text-center text-white">
+<form action=""id="contact-form" class="container flex flex-col space-y-7 mx-auto max-w-sm sm:block" >
+  <header>
+    <p class="capitalize text-xl"><em>35,000+</em> already joined</p>
+    <h2 class="text-3xl font-semibold">Stay up-to-date with what we are doing</h2>
+  </header>
+  <input type="email" name="email" id="usermail" placeholder="Enter your email address" value="" class="p-4 rounded-lg">
+  <input type="submit" value="Contact Us" class="text-bold p-4 rounded-lg bg-SoftRed baseline cursor-pointer hover:bg-white hover:text-SoftRed hover:border-2 hover:border-SoftRed hover:duration-300">
+</form>
+</section>
+<footer class="flex flex-col items-center uppercase p-7 bg-VeryDarkBlue text-white  font-medium space-y-7 md:flex-row">
+
+
+
+  <!-- <ul class="flex flex-col">
+    <li><a href="">features</a></li>
+    <li><a href="">pricing</a></li>
+    <li><a href="">contact</a></li>
+  </ul> -->
+
+    <div class="container flex flex-col items-center space-y-7 md:flex-row md:items-end md:space-x-7">
+      <div><img src="./images/logo-bookmark.svg" alt="" class="invert"></div>
+      <a href="#features-section" class="hover:text-SoftRed">features</a>
+      <a href="#pricing-section" class="hover:text-SoftRed">pricing</a>
+      <a href="#contact-form" class="hover:text-SoftRed">contact</a>
+    </div>
+
+    <div id="socials" class="flex flex-row items-center space-x-8">
+      <a href=""><img src="./images/icon-facebook.svg" alt=""></a>
+      <a href=""><img src="./images/icon-twitter.svg" alt=""></a>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Features
+  Pricing
+  Contact
+  Login
+
+  A Simple Bookmark Manager
+
+  A clean and simple interface to organize your favourite websites. Open a new 
+  browser tab and see your sites load instantly. Try it for free.
+
+  Get it on Chrome
+  Get it on Firefox
+
+  Features
+
+  Our aim is to make it quick and easy for you to access your favourite websites. 
+  Your bookmarks sync between your devices so you can access them on the go.
+
+  Simple Bookmarking
+  Speedy Searching
+  Easy Sharing
+
+  Bookmark in one click
+
+  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+  gives you complete control over how you manage your favourite sites.
+
+  More Info
+
+  Intelligent search
+
+  Our powerful search feature will help you find saved sites in no time at all. 
+  No need to trawl through all of your bookmarks.
+
+  More Info
+
+  Share your bookmarks
+
+  Easily share your bookmarks and collections with others. Create a shareable 
+  link that you can send at the click of a button.
+
+  More Info
+
+  Download the extension
+
+  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+  got a favourite you’d like us to prioritize.
+
+  Add to Chrome
+  Minimum version 62
+  Add & Install Extension
+
+  Add to Firefox
+  Minimum version 55
+  Add & Install Extension
+
+  Add to Opera
+  Minimum version 46
+  Add & Install Extension
+
+  Frequently Asked Questions
+  
+  Here are some of our FAQs. If you have any other questions you’d like 
+  answered please feel free to email us. -->
+
+  <!-- Question 1 -->
+  <!-- What is Bookmark? -->
+
+  <!-- Answer 1 -->
+  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
+
+  <!-- Question 2 -->
+  <!-- How can I request a new browser? -->
+
+  <!-- Answer 2 -->
+  <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
+
+  <!-- Question 3 -->
+  <!-- Is there a mobile app? -->
+
+  <!-- Answer 3 -->
+  <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  sollicitudin ex et ultricies bibendum. -->
+
+  <!-- Question 4 -->
+  <!-- What about other Chromium browsers? -->
+
+  <!-- Answer 4 -->
+  <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  vitae neque eget nisl gravida pellentesque non ut velit.
+
+  More Info
+
+  35,000+ already joined
+
+  Stay up-to-date with what we’re doing
+
+  Contact Us
+
+  Features
+  Pricing
+  Contact -->
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
+
+<!-- features section
+<section id="features-section" class="container my-14 mx-auto">
+  <div class="container text-center p-5">
+    <h2 class="text-3xl capitalize text-VeryDarkBlue font-bold">features</h2>
+    <p class="intro-text text-SoftBlue">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go</p>
+
+    <div class="">
+      <ul class="list-none mx-0 my-8 features text-VeryDarkBlue capitalize  flex flex-col md:flex-row md:justify-around">
+        <li class="border-y border-SoftBlue py-2 underline decoration-4 decoration-SoftRed underline-offset-8">simple bookmarking</li>
+        <li class="border-y border-SoftBlue py-2">speedy search</li>
+        <li class="border-y border-SoftBlue py-2">easy sharing</li>
+      </ul>
+    </div>
+    
+    <div>
+      Explanation for bookmark features selected above goes in here
+      <div class="simple-bookmarking p-5 text-center flex flex-col space-y-8 md:flex-row md:space-x-16">
+        <img src="./images/illustration-features-tab-1.svg" alt="">
+        <div class="intro-text">
+          <h3 class="text-2xl text-VeryDarkBlue font-bold">
+            Bookmark in one click
+          </h3>
+          <p class="text-SoftBlue">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you control over how you manage your favourite sites</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</section> -->
